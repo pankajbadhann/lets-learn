@@ -1,1 +1,0 @@
-# This repo is narrate my journey with C language.
