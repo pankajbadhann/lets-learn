@@ -1,13 +1,138 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* for entire website ------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-    height: 100vh;
-    width: 100vw;
-    background-color: #1b1919;
-    color: #ffffffa9;
-    user-select: none;
+body{
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: rgb(15, 21, 37);
+  color: rgba(245, 245, 245, 0.737);
+  font-size: clamp(1rem, 2vw, 4rem);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* header ------------------------------------------*/
+header{
+  display: flex;
+  width: 99.6vw;
+  height: 5vh;
+  background-color: royalblue;
+}
+
+.logo{
+  display: flex;
+  width: 29.8vw;
+  align-items: center;
+  padding-left: 2vw;
+}
+
+nav{
+  width: 69.8vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+a:hover{
+  color: white;
+}
+
+/* table component ---------------------------------*/
+.table-container{
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+}
+
+tr, th, td, table{
+  border: 1px solid white;
+  text-align: center;
+}
+
+/* form component ----------------------------------*/
+.form-container{
+  width: 99.6vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+  background-color: red;
+}
+
+form{
+  border: 1px solid white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.formDivs label{
+  padding-right: 2vw;
+  width: 20vw;
+  background-color: green;
+}
+
+.formDivs{
+  padding: .3vw;
+  margin: .3vw;
+  background-color: brown;
+  border-radius: 1vw;
+  width: 70vw;
+}
+
+.formDivs input{
+  border-bottom: 1px solid white;
+  outline: none;
+  box-shadow: none;
+}
+
+.formDivs input[type="color"]{
+  border: none;
+}
+
+.formDivs .formBtn{
+  border: 1px solid whitesmoke;
+  padding: .3vw;
+  border-radius: 1vw;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formDivs select{
+  background-color: rgb(15, 21, 37);
+}
+
+.formPara{
+  display: flex;
+  border: 1px solid whitesmoke;
+  border-radius: 1vw;
+}
+
+/* web tool kit ------------------------------------*/
+::-webkit-scrollbar {
+  width: .4vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b2b2b2b7;
 }

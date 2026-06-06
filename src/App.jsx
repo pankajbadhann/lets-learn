@@ -1,18 +1,14 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
+import "./App.css";
+import Home from "./pages/Home.jsx";
 
 function App() {
-
   return (
     <>
-      <div className="flex h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold">
-        learnwithpankaj
-      </h1>
-    </div>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
